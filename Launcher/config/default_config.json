@@ -1,0 +1,43 @@
+{
+    "browser": {
+        "default_url": "http://example.com/",
+        "process_termination_attempts": 3,
+        "process_termination_delay_ms": 500
+    },
+    "logging": {
+        "level": "info",
+        "file_path": "launcher.log",
+        "console_output": true
+    },
+    "profiles": {
+        "chrome": {
+            "base_path": "Google\\Chrome\\User Data",
+            "profile_paths": [
+                "Default",
+                "Profile 1",
+                "Default User"
+            ]
+        },
+        "edge": {
+            "base_path": "Microsoft\\Edge\\User Data",
+            "profile_paths": [
+                "Default",
+                "Profile 1",
+                "Default User"
+            ]
+        },
+        "firefox": {
+            "base_path": "Mozilla\\Firefox\\Profiles",
+            "profile_priority": [
+                ".default-release",
+                ".default",
+                "*.dev-edition-default"
+            ]
+        }
+    },
+    "cache": {
+        "cleanup_on_exit": true,
+        "include_cookies": false,
+        "include_history": true
+    }
+} 
